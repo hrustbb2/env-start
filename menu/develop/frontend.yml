@@ -1,0 +1,8 @@
+items:
+    1:
+        title: '1. First module'
+        env: 'dev'
+        commands:
+            - 'docker exec -it %(appName)s_nodejs_1 sh /home/app/src/FirstModule/scripts/deploy_dev.sh'
+        vars:
+            - appName
