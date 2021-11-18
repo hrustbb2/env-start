@@ -6,3 +6,10 @@ items:
             - 'docker exec -it %(appName)s_nodejs_1 sh /home/app/src/FirstModule/scripts/deploy_dev.sh'
         vars:
             - appName
+    2:
+        title: '2. Auth module'
+        env: 'dev'
+        commands:
+            - 'docker exec -it %(appName)s_nodejs_1 sh /home/app/src/Auth/scripts/deploy_dev.sh'
+        vars:
+            - appName
